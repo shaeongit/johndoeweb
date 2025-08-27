@@ -240,3 +240,23 @@ footer a:hover {
 .cookie-popup button:hover {
   background-color: #2980b9;
 }
+
+/* Estilo para los artículos del blog */
+.blog-post {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498db;
+}
+
+.blog-post h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+  color: #555;
+  line-height: 1.7;
+}
