@@ -73,6 +73,7 @@ header {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 80px; /* Para que no te tape con el menu las secciones como privacy-policy.html#avisolegal */
 }
 
 .section h2 {
