@@ -1,9 +1,9 @@
 // Menú responsive
 const menuToggle = document.querySelector('.menu-toggle');
-const mobileMenu = document.querySelector('.main-nav');
+const navList = document.querySelector('.main-nav ul');
 
 menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+      navList.classList.toggle('active');
 });
 
 // Popup de cookies
@@ -24,4 +24,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   alert('Gracias por contactarme. Te responderé pronto.');
   this.reset();
+});
+
+
+// Cerrar menú móvil al hacer clic en un enlace
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    navList.classList.remove('active');
+  });
 });
